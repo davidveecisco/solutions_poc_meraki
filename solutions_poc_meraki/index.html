@@ -43,6 +43,11 @@
                     <img src="Content/merakilogo.jpg" />
                     <p>Welcome to Meraki WiFi</p>
 
+
+                    <div>
+                        <button type="submit" id="btnReset" class="btn btn-success">Reset</button>
+                    </div>
+
                 </div>
             </div>
             <div class="col">
@@ -58,6 +63,13 @@
         <script src="Scripts/scrolling-nav.js"></script>
         <script>
             $(document).ready(function () {
+
+                $("#btnReset").click(function (e) {
+
+                    $("#loginform").show();
+                    $("#loggedinform").hide();
+                });
+
                 $("#btnSubmit").click(function (e) {
                     e.preventDefault();
 
